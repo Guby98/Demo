@@ -1,0 +1,136 @@
+header{
+    nav{
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.listaDesordenada{
+    margin: 2px 10px 15px 50px;
+    padding: 10px 5px 5px 5px;
+    margin: 0 auto;
+    width: 100%;
+    list-style-type:none;
+    border: color black 2px;
+    transition: all 0.5s;
+}
+
+.menuMovible{
+    display: grid;
+    justify-content: end;
+    gap: 22px;
+    grid-template-columns: repeat(5, fr);
+    grid-template-rows: repeat(5,fr);
+    grid-template-areas: 
+    "a b c d e"
+    
+    }
+    
+    .item1{
+        grid-area: a;
+    }
+    .item2{
+        grid-area: b;
+    }
+    .item3{
+        grid-area: c;
+    }
+    .item4{
+        grid-area: d;
+    }
+    .item5{
+        grid-area: e;
+    }
+
+.item1:hover{
+    background-color: $colorGrey;
+    transition: 0.5s;
+    border-radius: 20%;
+    transform: scale(1.2);
+}
+.item2:hover{
+    background-color: $colorGrey;
+    transition: 0.5s;
+    border-radius: 20%;
+    transform: scale(1.2);
+}
+.item3:hover{
+    background-color: $colorGrey;
+    transition: 0.5s;
+    border-radius: 20%;
+    transform: scale(1.2);
+}
+.item4:hover{
+    background-color: $colorGrey;
+    transition: 0.5s;
+    border-radius: 20%;
+    transform: scale(1.2);
+}
+.item5:hover{
+    background-color: $colorGrey;
+    transition: 0.5s;
+    border-radius: 20%;
+    transform: scale(1.2);
+}
+
+a[href="index.html"]{
+    color: $colorWhite;
+}
+a[href="historia.html"]{
+    color: $colorWhite;
+}
+a[href="galeria.html"]{
+    color: $colorWhite;
+}
+a[href="eventos.html"]{
+    color: $colorWhite;
+}
+a[href="contacto.html"]{
+    color: $colorWhite;
+}
+
+.boxmodel{
+    padding: 5px;
+    margin: 2px 2px 2px 40px;
+    border: black hidden;
+    transition: transform 0.3s;
+}
+
+.boxmodel:hover{
+    transform: scale(1.1);
+    animation-name: bordes;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bordes{
+    0% {border: solid 0.5px #D8D6D5;}
+    25% {border: solid 0.5px #D8D6D5;}
+    50% {border: solid 0.5px #E7E7E7 ;}
+    75% {border: solid 0.5px #F3F3F3;}
+    100% {border: solid 0.5px #F9F9F9 ;}
+}
+
+@media (max-width: 768px){
+    header img {
+        background-color: #161616;
+        position: absolute;
+       display: none;
+        }
+        nav{
+            width: 100%;
+            font-size: 60%;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .boxmodel:hover{
+            transform: scale(1.0);
+        }
+    }
