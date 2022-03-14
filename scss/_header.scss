@@ -97,7 +97,7 @@ a[href="contacto.html"]{
 .boxmodel{
     padding: 5px;
     margin: 2px 2px 2px 40px;
-    border: black hidden;
+    border: map-get($blacks, primary) 3px solid;
     transition: transform 0.3s;
 }
 
