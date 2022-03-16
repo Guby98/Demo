@@ -13,6 +13,7 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         font-weight: 300;
+        text-align: center;
     }
     
     h3{
@@ -24,6 +25,23 @@ main{
     }
 }
 
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.divLogo{
+    background-image: url(../assets/1400px.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 70vw;
+    height: 70vh;
+    margin-bottom: 80px;
+    max-width: 70vw;
+    max-height: 70vh;
+    overflow: hidden;
+}
 
 .divP{
     flex-wrap: wrap;
@@ -37,7 +55,11 @@ main{
 .divVideo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+}
+
+iframe{
+    border-radius: 4%;
 }
 
 .divIndex{
@@ -45,6 +67,9 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
+}
+.divIndex img{
+    border: 1px black solid;
 }
 
 .separateTitle{
@@ -68,16 +93,39 @@ main{
     margin: 10px 10px 10px 10px;
 }
 
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-content: right;
+    width: 15vw;
+    height: 13vh;
+
+}
+
+
+.nav4{
+    text-align: center;
+}
+
 .piletaGaleria{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.piletaGaleria img {
+    border: 1px black solid;
+}
+
 .divGaleria{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.divGaleria img {
+    border: 1px black solid;
 }
 
 .paragraph{
@@ -89,11 +137,14 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.div{
     width: 100%;
 }
+
+.boxTallarinada img{
+    border: 1px black solid;
+}
+
+
 
 .divContacto{
     display: flex;
@@ -134,4 +185,49 @@ main{
     .btn{
         font-size: 67%;
     }
+
+    nav{
+        text-align: center;
+    }
 }
+
+
+@media (max-width: 350px) {
+    .divLogo{
+        background-image: url(../assets/300px.jpg);
+        
+    }
+}
+
+@media (max-width: 576px) {
+        .divLogo{
+            background-image: url(../assets/576px.jpg);
+        }
+}
+
+@media (max-width: 768px) {
+        .divLogo{
+            background-image: url(../assets/768px.jpg);
+        }
+}
+
+@media (max-width: 992px) {
+        .divLogo{
+            background-image: url(../assets/992px.jpg);
+        }
+}
+
+@media (max-width: 1200px) {
+        .divLogo{
+            background-image: url(../assets/1200px.jpg);
+        }
+}
+
+@media (width: 1400px) {
+        .divLogo{
+            background-image: url(../assets/1400px.jpg);
+        
+        }
+}
+
+

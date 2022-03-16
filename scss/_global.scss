@@ -8,17 +8,15 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 110%;
     word-spacing: 0.1mm;
-    background-color: #161616;
+    background-image: linear-gradient (red, blue);
+    background-color: #0b0809;
     color: white;
-    max-width: 100vw;
-    max-height: 100vh;
-    background-image: linear-gradient(85% black, rgb(15, 15, 15));
+    
 }
 
 img{
     border-radius: 15px;
     margin: 10px 10px 10px 10px;
-    padding: 5px 5px 5px 5px;
     border-style:inherit;
     max-width: 100%;
 }
