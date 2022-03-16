@@ -25,22 +25,22 @@ main{
     }
 }
 
-main{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 
 .divLogo{
     background-image: url(../assets/1400px.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 70vw;
-    height: 70vh;
+    width: 90vw;
+    height: 90vh;
     margin-bottom: 80px;
-    max-width: 70vw;
-    max-height: 70vh;
-    overflow: hidden;
+    overflow: visible;
+}
+
+.sectionDivide{
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .divP{
@@ -188,6 +188,7 @@ aside{
 
     nav{
         text-align: center;
+        padding-right: 10px;
     }
 }
 
