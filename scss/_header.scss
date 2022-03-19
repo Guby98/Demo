@@ -22,7 +22,7 @@ header{
 
 .menuMovible{
     display: grid;
-    justify-content: end;
+    justify-content: center;
     gap: 22px;
     grid-template-columns: repeat(5, fr);
     grid-template-rows: repeat(5,fr);
