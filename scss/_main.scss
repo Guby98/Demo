@@ -22,6 +22,7 @@ main{
 
     h4{
         font-weight: 200;
+        text-align: center;
     }
 }
 
@@ -35,12 +36,12 @@ main{
     width: 90vw;
     height: 90vh;
     margin-bottom: 80px;
-    overflow: visible;
+    padding-top: 10%;
 }
 
 .sectionDivide{
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .divP{
@@ -118,15 +119,29 @@ aside{
     border: 1px black solid;
 }
 
+.piletaGaleria img:hover{
+    border: 0.5px white solid;
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
+
 .divGaleria{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 
-.divGaleria img {
-    border: 1px black solid;
+.divGaleria img:hover {
+    border: 0.5px white solid;
+    transform: scale(1.01);
+    transition: all 0.5s;
 }
+
+
+
 
 .paragraph{
     text-align: center;
@@ -138,10 +153,13 @@ aside{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+    
 }
 
-.boxTallarinada img{
-    border: 1px black solid;
+.boxTallarinada img:hover{
+    border: 0.5px white solid;
+    transform: scale(1.01);
+    transition: all 0.5s;
 }
 
 
@@ -170,6 +188,24 @@ aside{
     @include imgGaleria(2px,10px, black, 15px)
 }
 
+.sectionMap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+div p {
+    text-align: center;
+}
+
+
+.parrafoLight{
+    color: grey;
+    text-align: center;
+}
+
+
  @media (max-width: 768px){
     iframe{
         width: 80%;
@@ -192,43 +228,66 @@ aside{
     }
 }
 
-
 @media (max-width: 350px) {
     .divLogo{
-        background-image: url(../assets/300px.jpg);
-        
+        background-image: url("../assets/300px.jpg");
+        background-size: 120%;
     }
 }
 
 @media (max-width: 576px) {
         .divLogo{
-            background-image: url(../assets/576px.jpg);
+            background-image: url("../assets/576px.jpg");
+            background-size: 100%;
+        }
+        h1{
+            font-size: 92%;
+        }
+        .divP{
+            font-size: 99%;
+        }
+        h2{
+            font-size: 95%;
+        }
+        p{
+            font-size: 85%;
         }
 }
 
 @media (max-width: 768px) {
         .divLogo{
-            background-image: url(../assets/768px.jpg);
+            background-image: url("../assets/768px.jpg");
+            background-size: 100%;
+        }
+        h1{
+            font-size: 105%;
         }
 }
 
 @media (max-width: 992px) {
         .divLogo{
-            background-image: url(../assets/992px.jpg);
+            background-image: url("../assets/992px.jpg");
+            background-size: 100%;
+        }
+        h1{
+            font-size: 120%;
         }
 }
 
 @media (max-width: 1200px) {
         .divLogo{
-            background-image: url(../assets/1200px.jpg);
+            background-image: url("../assets/1200px.jpg");
+            background-size: 100%;
         }
 }
 
 @media (width: 1400px) {
         .divLogo{
-            background-image: url(../assets/1400px.jpg);
-        
+            background-image: url("../assets/1400px.jpg");
+            background-size: 100%;
         }
 }
+
+
 
 

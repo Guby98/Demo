@@ -1,4 +1,4 @@
-header{
+header{ 
     nav{
         ul{
             li{
@@ -10,105 +10,42 @@ header{
     }
 }
 
-.listaDesordenada{
-    margin: 2px 10px 15px 50px;
-    padding: 10px 5px 5px 5px;
-    margin: 0 auto;
-    width: 100%;
-    list-style-type:none;
-    border: color black 2px;
-    transition: all 0.5s;
-}
 
-.menuMovible{
-    display: grid;
-    justify-content: center;
-    gap: 22px;
-    grid-template-columns: repeat(5, fr);
-    grid-template-rows: repeat(5,fr);
-    grid-template-areas: 
-    "a b c d e"
+.navbar{
+    background-color: #0b0809!important;
     
-    }
-    
-    .item1{
-        grid-area: a;
-    }
-    .item2{
-        grid-area: b;
-    }
-    .item3{
-        grid-area: c;
-    }
-    .item4{
-        grid-area: d;
-    }
-    .item5{
-        grid-area: e;
-    }
-
-.item1:hover{
-    background-color: $colorGrey;
-    transition: 0.5s;
-    border-radius: 20%;
-    transform: scale(1.2);
-}
-.item2:hover{
-    background-color: $colorGrey;
-    transition: 0.5s;
-    border-radius: 20%;
-    transform: scale(1.2);
-}
-.item3:hover{
-    background-color: $colorGrey;
-    transition: 0.5s;
-    border-radius: 20%;
-    transform: scale(1.2);
-}
-.item4:hover{
-    background-color: $colorGrey;
-    transition: 0.5s;
-    border-radius: 20%;
-    transform: scale(1.2);
-}
-.item5:hover{
-    background-color: $colorGrey;
-    transition: 0.5s;
-    border-radius: 20%;
-    transform: scale(1.2);
 }
 
-a[href="index.html"]{
-    color: $colorWhite;
-}
-a[href="historia.html"]{
-    color: $colorWhite;
-}
-a[href="galeria.html"]{
-    color: $colorWhite;
-}
-a[href="eventos.html"]{
-    color: $colorWhite;
-}
-a[href="contacto.html"]{
-    color: $colorWhite;
+.navbar{
+    padding: 0;
 }
 
 
-@keyframes bordes{
-    0% {border: solid 0.5px #D8D6D5;}
-    25% {border: solid 0.5px #D8D6D5;}
-    50% {border: solid 0.5px #E7E7E7 ;}
-    75% {border: solid 0.5px #F3F3F3;}
-    100% {border: solid 0.5px #F9F9F9 ;}
+.navbar .navbar-nav .nav-link{
+    transition: all ease 0.5s;
+    border-radius: 17%;
+    margin: 0.1px;
 }
 
-@media (max-width: 768px){
-        nav{
-            width: 100%;
-            font-size: 60%;
-            text-align: center;
-        }
-    }
+.navbar .navbar-nav .nav-link:hover{
+    background-color: grey;
+}
+
+.container{
+    transition: all 2s ease;
+    align-items: center;
+    overflow: visible;
+}
+
+.container-fluid{
+    margin:0;
+    padding: 0;
+}
 
     
+
+@media screen and (min-width:992px){
+    .navbar{
+        padding: 0px;
+    }
+}
