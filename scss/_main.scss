@@ -40,8 +40,8 @@ main{
 }
 
 .sectionDivide{
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .divP{
@@ -195,6 +195,10 @@ aside{
     align-content: center;
 }
 
+.sectionMap h4{
+    text-align: center;
+}
+
 div p {
     text-align: center;
 }
@@ -251,6 +255,9 @@ div p {
         }
         p{
             font-size: 85%;
+        }
+        h4{
+            font-size: 88%;
         }
 }
 
