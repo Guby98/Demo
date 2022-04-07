@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 60px;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.menu a:hover{
+    color: #ff8000;
+}
+
+#banner{
+    padding: 0 50px;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(/SRC/mlp1bg.jpg);
+    color: white;
+    width: auto;
+    height: 45vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.infoBanner{
+    padding-top: 30px;
+}
+.infoBanner h3{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.infoBanner p{
+    width: 50%;
+    padding-bottom: 100px;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: justify;   
+}
+
+.boton-mas{
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #ff8000;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 200px;
+    transition: al 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.boton-mas span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.boton-mas span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.boton-mas:hover span{
+    padding-right: 25px;
+}
+
+.boton-mas:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#seccionesIndex{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(133, 133, 133, 0.5);
+}
+
+#seccionesIndex img{
+    width: 300px;
+    border-radius: 100%;
+}
+
+#seccionesIndex div{
+    padding: 30px 30px;
+}
+
+#seccionesIndex div h4{
+    color: #001b30;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#seccionesIndex div p{
+    color: #003761;
+    font-size: 18px;
+}
+
+.saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    color: #ff8000;
+    padding: 10px 30px;
+    border: 3px solid #ff8000;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.saber-mas:hover{
+    background: #ff8000;
+    color: white;
+}
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+    background-color: #ff8000;
+}
+
+.redes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button {
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+}
+
+button, button span{
+    transition: 200ms;
+}
+
+button .texto{
+    transform: translateX(10px);
+    color: #ff8000;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+button .icono{
+    position: absolute;
+    border-left: 1px solid #c46608;
+    transform: translateX(85px);
+    height: 20px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover .texto{
+    color: transparent;
+}
+
+button:hover .icono{
+    width: 150px;
+    border-left: none;
+    transform: translateX(-10px);
+}
+
+.disclaimer{
+    width: 100%;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.disclaimer span{
+    font-weight: bold;
+    color: #444444;
+}
+
+#contacto{
+    background-color: rgb(29, 29, 29);
+    padding: 50px 0;
+    color: rgb(220, 220, 220);
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contacto-form{
+    display: flex;
+}
+
+.contacto-form div{
+    padding: 15px;
+    flex: 1;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    background: rgb(29, 29, 29);
+    border-radius: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-color: rgb(59, 59, 59);
+    padding: 10px 5px;
+    outline: 0;
+    color: white;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: white;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: white
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.botonEnviar{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(220, 220, 220);
+    padding: 10px 30px;
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.botonEnviar:hover{
+    background: #ff8000;
+    color: rgb(220, 220, 220);
+}
+
+#cars{
+    height: 90vh;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(/SRC/carsbg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.slidershow{
+    margin: auto;
+    background-color: #525252;
+    width: 1000px;
+    padding: 30px;
+}
+  
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+#f1 {
+    width: 100%;
+    background-image: url(SRC/f1bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.filaF1{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.columnaF1 {
+    margin-left: 16px;
+    flex-basis: 40%;
+}
+
+.columna_card {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainF1 {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-shadow: #000;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 345px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.norris {
+    text-align: center;
+    background-image: url(SRC/norris.png);
+}
+.ricciardo {
+    text-align: center;
+    background-image: url(SRC/ricciardo.png);
+}
+.numero_piloto {
+    margin-top: 200px;
+    align-items: center;
+    width: 50px;
+}
+
+.card h3 {
+    color: #ff8000;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-weight: 600;
+}
+.card h4 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #ff8000, 0 0 5px white;
+    font-weight: 300;
+    
+}
+.videoF1 {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+}
+
+#about{
+    width: 100%;
+    padding: 50px 50px;
+    background: #2c3338;
+    background-position: center;
+    background-size: cover;
+}
+
+.infoAbout{
+    width: 90%;
+    color: rgb(238, 238, 238);
+}
+
+.infoAbout h1{
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.infoAbout p{
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+
+.tarjetasInfo{
+    width: 100%;
+    padding: 50px 50px;
+}
+
+.cardInfo{
+    width: 500px;
+    height: 300px;
+    display:inline-block;
+    border-radius: 10px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 40px 15px;
+    color: #000;
+    background-position: center;
+    background-size: cover;
+}
+
+.innovacion{
+    text-align: center;
+    background-image: url(/SRC/innovacionbg.png);
+}
+
+.hogar{
+    text-align: center;
+    background-image: url(/SRC/hogarbg.png);
+}
+
+.cardInfo h3{
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.cardInfo h2{
+    font-weight: 600;
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+.cardInfo p{
+    font-weight: 200;
+    color: #ff8000;
+}
+
+#seccionMerch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    background: #212121;
+}
+
+.cardMerch {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.cardMerch::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #777777;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.cardMerch:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.cardMerch::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.cardMerch .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.cardMerch .imgBox img {
+    max-width: 100%;
+    transition: .5s;
+}
+
+.cardMerch:hover .imgBox img {
+    max-width: 80%;
+    
+}
+
+.cardMerch .contenidoBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.cardMerch .contenidoBox h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cardMerch .contenidoBox .precio {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cardMerch .contenidoBox .comprar {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: #ff8000;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.cardMerch:hover .contenidoBox .comprar {
+    top: 0;
+    opacity: 1;
+}
+
+#noticias{
+    background-image: linear-gradient(to right bottom, #000000, #020202, #040404, #060606, #080808, #111111, #171717, #1c1c1c, #272727, #323232, #3e3e3e, #4a4a4a);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.cardNoticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    height: 400px;
+    width: 800px;
+    margin: 30px;
+    padding: 15px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.noticiaImagen img{
+    max-width: 800px;
+}
+
+.noticiaContenido{
+    margin-top: 20px;
+}
+
+.cardNoticias:hover{
+    height: 800px;
+}
+
+.noticiaContenido h2{
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.noticiaContenido p{
+    font-weight: 200;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+.noticiaContenido span{
+    font-weight: bold;
+}
